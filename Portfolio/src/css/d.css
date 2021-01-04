@@ -1,0 +1,50 @@
+body{
+    margin:0;
+    padding:0;
+}
+.header{
+    padding-top:20px;
+}
+.container{
+    max-width:1200px;
+    margin:0 auto;
+    padding: 0 .5rem;
+}
+.header__content{
+    display:flex;
+    justify-content: space-between;
+}
+.header__list{
+    list-style-type:none;
+    padding:0;
+
+    display:flex;
+}
+
+.header__link{
+    color:#000;
+    text-decoration: none;
+}
+
+.header__item{
+    margin: 0 .5rem;
+}
+
+.main{
+    height:75vh;
+    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.main__button{
+    padding:20px;
+    background: rgba(245, 221, 9, 0.836);
+    border:none;
+
+    border-radius: 5px;
+}
