@@ -329,12 +329,12 @@
 
                     <div class="contacts__form">
 
-                        <form class="form" id="form">
+                        <form action="mail.php" class="form" id="form" method="POST">
 
                                 <div class="contacts__input">
-                                    <input name="name" id="name" type="text" class="inputs contacts__name" placeholder="Ваше имя">
+                                    <input name="name" id="name" type="text" class="inputs contacts__name" placeholder="Ваше имя" required>
 
-                                    <input name="email" id="email" type="text" class="inputs contacts__email" placeholder="Почта">
+                                    <input name="email" id="email" type="email" class="inputs contacts__email" placeholder="Почта" required>
                                 </div>
                                 
                                 <textarea name="text" id="text" placeholder="Какой вам нужен сайт? Какая задача у сайта?" class="contacts__area"></textarea>
@@ -342,9 +342,6 @@
                                 <button type="submit" class="button contacts__send" id="contacts__send">Отправить заявку</button>
          
                         </form>
-                        <div id="errorMess">
-
-                        </div>
                     </div>
 
                   
