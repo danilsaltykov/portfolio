@@ -335,6 +335,9 @@ a{
 
 
 
+
+
+
 .contacts__area{
     resize:none;
     height:200px;
@@ -451,7 +454,7 @@ a{
     margin-right:1rem;
     margin-bottom:1rem;
 
-    font-size:21px;
+    font-size:16px;
 }
 
 .footer__title{

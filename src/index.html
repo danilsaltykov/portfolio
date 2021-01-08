@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/d.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
@@ -12,6 +12,8 @@
 </head>
 <body>
 
+  
+    
     <div class="wrapper">
         <header class="header">
             <div class="container">
@@ -323,34 +325,26 @@
                         <div class="contacts__subtitle">
                             Отвечу в любое время дня.<br> Я подстраиваюсь под ваш часовой пояс
                         </div>
-                        <!--<div class="contacts__buttons">
-                            
-                                <a class="contacts__btn" href="https://vk.com/danilsaltykov">
-                                    <img class="contacts__img" src="images/vk.svg" alt="">
-                                </a>
-                        
-                                <a class="contacts__btn" href="https://vk.com/danilsaltykov">
-                                    <img class="contacts__img" src="images/instagram-logo.svg" alt="">
-                                    
-                                </a>
-                                
-                                <a class="contacts__btn" href="https://vk.com/danilsaltykov">
-                                    <img class="contacts__img" src="images/telegram.svg" alt="">
-                                </a>
-                        </div> -->
                     </div>
 
                     <div class="contacts__form">
-                        <form action="" class="form" method="post">
+
+                        <form class="form" id="form">
+
                                 <div class="contacts__input">
-                                    <input name="name" type="text" class="inputs contacts__name" placeholder="Ваше имя">
-                                    <input name="email" type="text" class="inputs contacts__email" placeholder="Почта">
+                                    <input name="name" id="name" type="text" class="inputs contacts__name" placeholder="Ваше имя">
+
+                                    <input name="email" id="email" type="text" class="inputs contacts__email" placeholder="Почта">
                                 </div>
                                 
-                                <textarea name="text" placeholder="Какой вам нужен сайт? Какая задача у сайта?" class="contacts__area"></textarea>
-                                <button type="submit" class="button contacts__send">Отправить заявку</button>
+                                <textarea name="text" id="text" placeholder="Какой вам нужен сайт? Какая задача у сайта?" class="contacts__area"></textarea>
+
+                                <button type="submit" class="button contacts__send" id="contacts__send">Отправить заявку</button>
          
                         </form>
+                        <div id="errorMess">
+
+                        </div>
                     </div>
 
                   
@@ -364,7 +358,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__content">
-                    <h2 class="title footer__title">Сотрудничество</h2>
+                    <h2 class="title footer__title">Предложения по работе</h2>
                 <div class="footer__blocks">
                     <div class="footer__block email">
                         <a class="footer__link" href="mailto: dddsaltykov@gmail.com">
@@ -402,7 +396,7 @@
 
     
     
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/d.js"></script>
 </body>
 </html>
