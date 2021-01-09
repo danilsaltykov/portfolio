@@ -14,7 +14,7 @@ $(document).ready(function(){
             $hero.removeClass('attack').addClass('idle');
             $laser.removeClass('laser');
         }, 4000);
-}
+    }
         
         setInterval(scan, 6000 );
 
@@ -33,6 +33,15 @@ $(document).ready(function(){
                 
                 $('html, body').animate({
                     scrollTop: aboutH - 70
+                }, 500)
+            });
+
+            $('#button').on("click", function(e){
+                e.preventDefault();
+                let mainH = $("#works").offset().top;
+                
+                $('html, body').animate({
+                    scrollTop: mainH - 200
                 }, 500)
             });
 
@@ -69,4 +78,6 @@ $(document).ready(function(){
 
             });
 
-});
+        });
+
+                

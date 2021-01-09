@@ -49,7 +49,7 @@ a{
     color:inherit;
 }
 .header{
-    padding-top:20px;
+  
 
     background-color:#1b1b1b;
 }
@@ -133,7 +133,7 @@ a{
 }
 
 .hero{
-    width:250px;
+    width:40%;
     height:358px;
 
     position:relative;
@@ -155,6 +155,7 @@ a{
 .hero .stance{
     visibility:hidden;
     background-image: url(../images/herostance.png);
+    background-repeat:no-repeat;
     width:100%;
     height:100%;
     position:absolute;
@@ -174,6 +175,7 @@ a{
 .hero .attack{
     visibility:hidden;
     background-image: url(../images/heroright_nocape.png);
+    background-repeat:no-repeat;
     width:100%;
     height:100%;
     position:absolute;
@@ -211,6 +213,7 @@ a{
     background-image:url(../images/download.png);
     width:500px;
     height:70px;
+    background-repeat:no-repeat;
 
 
     position:absolute;
@@ -282,7 +285,6 @@ a{
 }
 
 .main__title{
-    text-align:left;
     padding:0;
 }
 .main__subtitle{
@@ -293,6 +295,8 @@ a{
     color:#fff;
     font-family: 'PT Sans', sans-serif;
   
+    width:60%;
+
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -319,7 +323,7 @@ a{
 }
 
 .works{
-    padding:100px;
+    padding:100px 0;
     background-color:#fff;
     
 }
@@ -557,6 +561,7 @@ a{
     padding:15px 225px 15px 10px;
     margin-bottom: 30px;
 
+    width:100%;
     border:none;
     color:#464747;
 }
@@ -583,7 +588,7 @@ a{
 
 
 .skills{
-    padding:100px;
+    padding:40px;
     background-color:#393e46;
 }
 
@@ -626,7 +631,7 @@ a{
 }
 
 .attainments{
-    padding:100px;
+    padding:100px 0;
 }
 .attainments__title{
     margin-bottom: 60px;
@@ -728,3 +733,93 @@ a{
     padding:100px 10px;
 }
 
+
+@media(max-width:1420px){
+    .works__blocks{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+
+    }
+}
+
+
+@media(max-width: 1050px){
+    .main__content{
+        text-align:right;
+        align-items:flex-end;
+    }
+
+    .main__title{
+        text-align:right;
+    }
+    
+    .skills__content{
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .skills__title{
+        margin-bottom: 0;
+    }
+
+    .skills__block{
+        margin-right:0;
+        margin-bottom: 15px;
+        width:100%;
+    }
+}
+
+
+@media(max-width:645px){
+    .hero{
+        width:60%;
+    }
+}
+
+@media(max-width:525px){
+    .hero{
+        display:none;
+    }
+    .main__wrapper{
+        justify-content: center;
+    }
+
+    .main__content{
+        text-align:center;
+        align-items: center;
+    }
+    .main__title{
+        text-align: center;
+    }
+
+    .main__subtitle{
+        margin-bottom: 65px;
+    }
+
+    .attainments__title{
+        font-size:26px;
+    }
+
+    .header__logo{
+        display:none;
+    }
+    
+    .header__content{
+        justify-content: center;
+    }
+
+    .contacts__title{
+        text-align:center;
+    }
+}
+
+@media(max-width:360px){
+    .header__link{
+        font-size:14px;
+    }
+
+    .works__image{
+        width:400px;
+    }
+}
