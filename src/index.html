@@ -14,7 +14,7 @@
 
   
     
-    <div class="wrapper">
+    <div class="wrapper" id="header">
         <header class="header">
             <div class="container">
                 <div class="header__content">
@@ -27,16 +27,16 @@
                 
                     <ul class="header__list">
                         <li class="header__item">
-                            <a href="#" class="header__link">Главная</a>
+                            <a href="#" class="header__link" id="main">Главная</a>
                         </li>
                         <li class="header__item">
-                            <a href="#" class="header__link">Обо мне</a>
+                            <a href="#" class="header__link" id="about">Обо мне</a>
                         </li>
                         <li class="header__item">
-                            <a href="#" class="header__link">Портфолио</a>
+                            <a href="#" class="header__link" id="portfolio">Портфолио</a>
                         </li>
                         <li class="header__item">
-                            <a href="#" class="header__link">Контакты</a>
+                            <a href="#" class="header__link" id="contact">Контакты</a>
                         </li>
                     </ul>
                 </div>
@@ -66,7 +66,7 @@
                     <div class="main__content">
                         <h3 class="title main__title">Привет! Меня зовут Данил.</h3>
                        
-                        <p class="main__subtitle">Я занимаюсь созданием сайтов,<br> начиная от одностраничных сайтов, заканчия интернет-магазинами и посадкой сайтов на CMS систему.</p>
+                        <p class="main__subtitle">Я занимаюсь созданием сайтов,<br> начиная от одностраничных сайтов, заканчивая интернет-магазинами и посадкой сайтов на CMS систему.</p>
                     
                         <button class="btn main__button">Посмотреть портфолио</button>
                     </div>
@@ -75,34 +75,42 @@
         </div>   <!--/.main-->
     </div>          <!--/.wrapper-->
 
-    <div class="works">
+    <div class="works" id="works">
         <div class="container">
             <div class="works__content">
                     <div class="title works__title">Несколько моих последних работ</div>
                     <div class="works__subtitle">Кликните на картинку, чтобы посмотреть подробности.<br>
-                        Для вашего удобства, работы разбиты на категории.</div>
+                       </div>
 
-                        <ul class="works__list">
-                            <li class="works__item">
-                              Landing Pages
-                            </li>
-                            <li class="works__item">
-                                Интернет-магазины
-                            </li>
-                            <li class="works__item">
-                                Учебные макеты
-                            </li>
-                        </ul>
+
 
                         <div class="works__blocks">
+
                             <div class="works__block">
-                                <img src="http://placehold.it/300" alt="">
+                                <img class="works__image" src="images/MacBook Pro2.jpg" alt="">
+                                <div class="description">
+                                    <p class="description__text">Мой персональный блог<br>(в разработке)<br></p>
+                                    <a href="https://danilsaltykov.github.io/personal-blog/dist/index.html" class="description__button">Посмотреть</a>
+                                    
+                                </div>
                             </div>
+
                             <div class="works__block">
-                                <img src="http://placehold.it/300" alt="">
+                                <img class="works__image" src="images/MacBook Pro.jpg" alt="">
+                                    <div class="description">
+                                        <p class="description__text">Вёрстка макета active box<br></p>
+                                        <a href="https://danilsaltykov.github.io/activebox.github.io/" class="description__button">Посмотреть</a>
+                                        
+                                    </div>
                             </div>
+                            
                             <div class="works__block">
-                                <img src="http://placehold.it/300" alt="">
+                                <img class="works__image" src="images/ааа.jpg" alt="">
+                                <div class="description">
+                                    <p class="description__text">Вёрстка строительного сайта<br></p>
+                                    <a href="https://danilsaltykov.github.io/web-for-building.github.io/Строительный%20сайт/index.html" class="description__button">Посмотреть</a>
+                                    
+                                </div>
                             </div>
                         </div>
             </div>
@@ -110,7 +118,7 @@
     </div>          <!--/.works-->
 
 
-    <div class="skills">
+    <div class="skills" id="skills">
         <div class="container">
             <div class="title skills__title">
                 Что я делаю
@@ -331,7 +339,7 @@
         </div>
     </div>          <!--/.attainments-->
 
-    <div class="contacts">
+    <div class="contacts" id="contacts">
         <div class="container">
 
             <div class="contacts__content">  

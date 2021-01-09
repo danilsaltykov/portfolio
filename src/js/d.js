@@ -20,10 +20,53 @@ $(document).ready(function(){
 
       
 
-        $(window).on("scroll", function() {
+        $(window).on("scroll load resize", function() {
             if ($(window).scrollTop() > 300) $('.header').addClass('fixed');
                   else $('.header').removeClass('fixed');
             });
 
+
+
+            $('#about').on("click", function(e){
+                e.preventDefault();
+                let aboutH = $("#skills").offset().top;
+                
+                $('html, body').animate({
+                    scrollTop: aboutH - 70
+                }, 500)
+            });
+
+            $('#portfolio').on("click", function(e){
+                e.preventDefault();
+                let mainH = $("#works").offset().top;
+                
+                $('html, body').animate({
+                    scrollTop: mainH - 100
+                }, 500)
+
+               
+            });
+
+            $('#contact').on("click", function(e){
+                e.preventDefault();
+                let contactH = $("#contacts").offset().top;
+                
+                $('html, body').animate({
+                    scrollTop: contactH - 50
+                }, 500)
+
+            });
+
+          
+
+            $('#main').on("click", function(e){
+                e.preventDefault();
+                let mainH = $("#header").offset().top;
+                
+                $('html, body').animate({
+                    scrollTop: mainH - 50
+                }, 500)
+
+            });
 
 });
