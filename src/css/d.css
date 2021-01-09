@@ -477,3 +477,26 @@ a{
     margin-right: 10px;
 }
 
+/* THANKYOU HTML*/
+
+.thankyou{
+    margin:0 auto;
+}
+
+.thankyou__header{
+    color:#fff;
+    background-color:#1b1b1b;
+    padding:25px 100px;
+}
+
+.thankyou__link:hover{
+   opacity:0.8;
+}
+  
+
+
+.thankyou__title{
+    text-align: center;
+    padding:100px 10px;
+}
+

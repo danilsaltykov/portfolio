@@ -15,7 +15,7 @@
     "X-Mailer: PHP/" . phpversion();
 
     if(mail($to, $message, $headers, $name)) {
-        echo 'Письмо отправлено';
+       header('location: thankyou.html');
     } else{
         echo 'Письмо не отправлено';
     }
