@@ -17,7 +17,7 @@
     if(mail($to, $message, $headers, $name)) {
        header('location: thankyou.html');
     } else{
-        echo 'Письмо не отправлено';
+        echo 'Упс, что-то пошло не так, видать программист ещё не столь хорошо разбирается в php или случился какой-то баг';
     }
 
     
